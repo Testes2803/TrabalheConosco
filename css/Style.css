@@ -309,23 +309,6 @@ button {
   max-width: 300px;
   -webkit-box-shadow: .5px .5px 4px #3e3d3d;
           box-shadow: .5px .5px 4px #3e3d3d;
-  /*.job__header:hover {
-          height: 98px;
-          transition: height .3s ease !important;
-          cursor: pointer;
-          & ~ .job__description{
-           display: none;
-          }
-          .primeiro{
-            display: none;
-          }
-          .segundo{
-            display: flex;
-            flex-direction: column;
-            margin: 10%;
-            align-items: center;
-          }
-        }*/
 }
 
 .content .jobs .job .job__header {
@@ -377,6 +360,35 @@ button {
 .content .jobs .job .job__header .segundo img {
   max-width: 25px;
   margin-top: 5px;
+}
+
+.content .jobs .job .job__header:hover {
+  height: 98px;
+  -webkit-transition: height .3s ease !important;
+  transition: height .3s ease !important;
+  cursor: pointer;
+}
+
+.content .jobs .job .job__header:hover ~ .job__description {
+  display: none;
+}
+
+.content .jobs .job .job__header:hover .primeiro {
+  display: none;
+}
+
+.content .jobs .job .job__header:hover .segundo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .content .jobs .job .job__date {
