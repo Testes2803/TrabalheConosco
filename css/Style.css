@@ -1,0 +1,597 @@
+* {
+  margin: 0px;
+  border: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.volks .logo__nike {
+  display: none !important;
+}
+
+.volks .logo__volks {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.volks .article {
+  display: none !important;
+}
+
+.volks .header--volks {
+  background-color: #fff !important;
+}
+
+.volks .header--volks a {
+  color: #1e1e1e !important;
+}
+
+.volks .header--volks a:hover {
+  border-bottom: 3px solid #124f88 !important;
+}
+
+.volks .banner--volks {
+  position: relative !important;
+}
+
+.volks .banner--volks .banner__image {
+  background-image: url("../images/volks/vista-aerea.jpg") !important;
+  -webkit-filter: contrast(130%);
+          filter: contrast(130%);
+  background-position: center;
+}
+
+.volks .banner--volks .banner__block {
+  background-color: transparent;
+  position: relative !important;
+  top: 50% !important;
+  font-family: 'Maven Pro', sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 1.2px 1.5px #1e1e1e;
+}
+
+.volks .banner--volks .banner__block h2 {
+  display: none;
+}
+
+.volks .banner--volks .search {
+  background-color: #124f88 !important;
+  margin-top: 3px;
+}
+
+.volks .banner--volks button {
+  color: #afaeae !important;
+  background-color: #fff !important;
+}
+
+.volks .content--volks .jobs {
+  margin-bottom: 25px;
+}
+
+.volks .content--volks .job__header {
+  background-color: #cacaca !important;
+}
+
+.volks .content--volks .volks__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: 70px;
+  margin-top: 0px;
+}
+
+.volks .content--volks .volks__button button {
+  background-color: #124f88 !important;
+  cursor: pointer;
+}
+
+.volks .footer--volks .footer__logo {
+  background-color: #124f88 !important;
+}
+
+.volks .footer--volks .footer__logo img {
+  margin-top: 15px;
+  min-width: 95px;
+  max-height: 90px;
+}
+
+.volks .footer--volks .footer__menu {
+  background-color: #fff !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.volks .footer--volks .footer__menu .menu {
+  margin: 20px;
+}
+
+.volks .footer--volks .footer__menu a {
+  color: #1e1e1e !important;
+}
+
+.volks .footer--volks .footer__menu div:first-child {
+  display: none;
+}
+
+.volks .footer--volks .footer__menu div:nth-child(2) {
+  display: none;
+}
+
+body {
+  background-color: rgba(250, 243, 243, 0.952);
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #e01f00;
+  border-radius: 5px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.logo__image {
+  max-width: 80px;
+}
+
+.header {
+  background-color: #e01f00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 1px 1px 3px #3e3d3d;
+          box-shadow: 1px 1px 3px #3e3d3d;
+}
+
+.header img {
+  position: relative;
+  left: 5%;
+  cursor: pointer;
+}
+
+.header .logo__volks {
+  display: none;
+}
+
+.header .header__links {
+  margin: 15px 0px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+  right: 5%;
+}
+
+.header .header__links a {
+  color: #fff;
+  margin: 5px;
+  padding: 5px;
+}
+
+.header .header__links a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.banner {
+  margin-top: 5px;
+  position: relative;
+}
+
+.banner .banner__image {
+  background-size: cover;
+  background-image: url("../images/nike/pessoas-correndo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 400px;
+}
+
+.banner .banner__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  max-width: 500px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 10px;
+  position: absolute;
+  top: 30px;
+  left: 5%;
+}
+
+.banner .banner__block h1 {
+  font-size: 70px;
+}
+
+.banner .banner__block h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.banner .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1e1e1e;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
+}
+
+.banner .search input {
+  margin: 5px;
+  border-radius: 2px;
+  height: 30px;
+  min-width: 30%;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 90%;
+  position: relative;
+  left: 5%;
+  right: 5%;
+}
+
+.content .jobs__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 35px;
+  color: #1e1e1e;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: normal;
+}
+
+.content .right {
+  display: none;
+}
+
+.content .left {
+  display: none;
+}
+
+.content .jobs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0px;
+  max-width: 70%;
+  position: relative;
+  left: 15%;
+  right: 15%;
+}
+
+.content .jobs .job {
+  background-color: #fff;
+  margin: 5px;
+  max-width: 300px;
+  -webkit-box-shadow: .5px .5px 4px #3e3d3d;
+          box-shadow: .5px .5px 4px #3e3d3d;
+  /*.job__header:hover {
+          height: 98px;
+          transition: height .3s ease !important;
+          cursor: pointer;
+          & ~ .job__description{
+           display: none;
+          }
+          .primeiro{
+            display: none;
+          }
+          .segundo{
+            display: flex;
+            flex-direction: column;
+            margin: 10%;
+            align-items: center;
+          }
+        }*/
+}
+
+.content .jobs .job .job__header {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .jobs .job .job__header .primeiro div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content .jobs .job .job__header .primeiro div img {
+  position: relative;
+  left: 90%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  max-width: 15px;
+}
+
+.content .jobs .job .job__header .segundo {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .jobs .job .job__header .segundo img {
+  max-width: 25px;
+  margin-top: 5px;
+}
+
+.content .jobs .job .job__date {
+  font-weight: normal;
+  font-size: 10px;
+  position: relative;
+  left: -15px;
+}
+
+.content .jobs .job .job__title {
+  font-weight: normal;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+
+.content .jobs .job .job__description {
+  padding: 10px;
+  font-size: 70%;
+}
+
+.content .jobs .job .job__description p:first-child {
+  color: #1e1e1e;
+  font-weight: bolder;
+}
+
+.content .jobs .job .job__submmit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid #aaa9a9;
+}
+
+.content .jobs .job .job__submmit a {
+  color: #1e1e1e;
+  font-size: 80%;
+}
+
+.content .jobs .job .job__submmit img {
+  max-width: 10px;
+}
+
+.content .volks__button {
+  display: none;
+}
+
+.content .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.content .article .article__image {
+  margin: 20px;
+}
+
+.content .article .article__image img {
+  max-height: 120px;
+}
+
+.content .article .article__description p {
+  max-width: 590px;
+  text-align: justify;
+  margin: 10px 0;
+  max-width: 400px;
+}
+
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+  margin-top: 20px;
+}
+
+footer .footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e01f00;
+  -webkit-box-shadow: 1px 1px 3px #3e3d3d;
+          box-shadow: 1px 1px 3px #3e3d3d;
+  min-width: 40%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px;
+}
+
+footer .footer__logo .logo__volks {
+  display: none;
+}
+
+footer .footer__menu {
+  background-color: #1e1e1e;
+  -webkit-box-shadow: 1px 1px 3px #3e3d3d;
+          box-shadow: 1px 1px 3px #3e3d3d;
+  min-width: 60%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer__menu .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px 0px;
+}
+
+footer .footer__menu .menu a {
+  color: #fff;
+}
+
+footer .footer__menu .menu .menu__links {
+  padding: 0px;
+  margin: 5px;
+}
+
+footer .copright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  color: #1e1e1e;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1382px) {
+  .job {
+    min-width: 30%;
+  }
+}
+
+@media only screen and (max-width: 1022px) {
+  .job {
+    min-width: 45%;
+  }
+}
+
+@media only screen and (max-width: 695px) {
+  .job {
+    min-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .header__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .banner__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+  h1 {
+    width: 100%;
+    font-size: 42px !important;
+  }
+  .search {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .footer__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
+  }
+  .menu {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=Style.css.map */

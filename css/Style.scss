@@ -1,0 +1,472 @@
+* {
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+$color-white: #fff;
+
+$color-darkgrey: #1e1e1e;
+$color-brightred: #e01f00;
+$color-blue: #124f88;
+
+//______________________________________________________________
+
+.volks {  
+  .logo__nike{
+    display: none !important;
+  }
+  .logo__volks{
+    display: flex !important;
+  }
+
+  .article{
+    display: none !important;
+  }
+
+  .header--volks {
+    background-color: $color-white !important;
+
+    a {
+      color: $color-darkgrey !important;
+    }
+    a:hover {
+      border-bottom: 3px solid $color-blue !important;     
+    }
+  }
+
+  .banner--volks {
+    position: relative !important;
+    .banner__image {
+      background-image: url("../images/volks/vista-aerea.jpg") !important;
+      filter: contrast(130%);
+      background-position: center;
+    }
+    .banner__block{
+        background-color: transparent;
+        position: relative !important;
+        top: 50% !important;
+        font-family: 'Maven Pro', sans-serif;
+        letter-spacing: 2px;
+        text-shadow: 1.2px 1.5px $color-darkgrey;
+        h2{
+        display: none;
+      }
+    }
+  
+    .search {
+      background-color: $color-blue !important;
+      margin-top: 3px;
+    }
+    button {
+      color: rgb(175, 174, 174) !important;
+      background-color: $color-white !important;
+    }
+  }
+
+  .content--volks {
+    .jobs{
+      margin-bottom: 25px;
+    }
+    .job__header {
+      background-color: #cacaca !important;
+    }
+    .volks__button{
+      display: flex; 
+      align-self: center;
+      margin-bottom: 70px;
+      margin-top: 0px;
+      button{
+        background-color: $color-blue !important;  
+        cursor: pointer;  
+      }
+    }
+  }
+
+  .footer--volks {
+    .footer__logo {
+      background-color: $color-blue !important;
+      img{
+        margin-top: 15px;
+        min-width: 95px;
+        max-height: 90px;
+      }
+    }
+    .footer__menu {
+      background-color: $color-white !important;
+      display: flex;
+      justify-content: flex-start;
+      .menu{
+        margin: 20px;
+      }
+      a{
+        color: $color-darkgrey !important;
+      }
+      div:first-child{
+        display: none;
+      }
+      div:nth-child(2){
+        display: none;
+      }
+    }
+  }
+}
+//______________________________________________________________
+
+  body {
+    background-color: rgba(250, 243, 243, 0.952);
+    font-family: "Roboto", sans-serif;
+  }
+
+  button {
+    padding: 5px 10px;
+    color: $color-white;
+    background-color: $color-brightred;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .logo__image {
+    max-width: 80px;
+  }
+
+  //HEADER
+  .header {
+    background-color: $color-brightred;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    box-shadow: 1px 1px 3px #3e3d3d;
+    img {
+      position: relative;
+      left: 5%;
+      cursor: pointer;
+    }
+    .logo__volks{
+      display: none;
+    }
+    .header__links {
+      margin: 15px 0px;
+      align-self: flex-end;
+      position: relative;
+      right: 5%;
+      a {
+        color: $color-white;
+        margin: 5px;
+        padding: 5px;
+      }
+      a:hover {
+        border-bottom: 2px solid $color-white;
+      }
+    }
+  }
+
+  //CONTENT
+  .banner {
+    margin-top: 5px;
+    position: relative;
+    .banner__image {
+      background-size: cover;
+      background-image: url("../images/nike/pessoas-correndo.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      width: 100%;
+      height: 400px;
+    }
+
+    .banner__block {
+      display: flex;
+      flex-direction: column;
+      color: $color-white;
+      background-color: rgba(0, 0, 0, 0.4);
+      max-width: 500px;
+      width: min-content;
+      padding: 10px;
+      position: absolute;
+      top: 30px;
+      left: 5%;
+      h1 {
+        font-size: 70px;        
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: normal;
+      }
+    }
+
+    .search {
+      display: flex;
+      background-color: $color-darkgrey;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      min-height: 60px;
+
+      input {
+        margin: 5px;
+        border-radius: 2px;
+        height: 30px;
+        min-width: 30%;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 90%;
+    position: relative;
+    left: 5%;
+    right: 5%;
+
+    .jobs__title {
+      display: flex;
+      margin-top: 35px;
+      color: $color-darkgrey;
+      justify-content: center;
+      font-weight: normal;
+    }
+
+    .right{
+      display: none;
+    }
+    .left{
+      display: none;
+    }
+
+    .jobs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 10px 0px;
+      max-width: 70%;
+      position: relative;
+      left: 15%;
+      right: 15%;
+
+      .job {
+        background-color: $color-white;
+        margin: 5px;
+        max-width: 300px;
+        box-shadow: .5px .5px 4px #3e3d3d;
+
+        .job__header {
+          background-color: $color-darkgrey;
+          color: $color-white;
+          padding: 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .primeiro div{
+            display: flex;
+            flex-direction: row;
+            img {
+              position: relative;
+              left: 90%;
+              filter: grayscale(0%);
+              max-width: 15px;
+            }
+          }
+          .segundo{
+            display: none;
+            flex-direction: column;
+            margin: 10%;
+            align-items: center;
+            img {
+              max-width: 25px;
+              margin-top: 5px;
+            }
+          }
+        }
+
+        /*.job__header:hover {
+          height: 98px;
+          transition: height .3s ease !important;
+          cursor: pointer;
+          & ~ .job__description{
+           display: none;
+          }
+          .primeiro{
+            display: none;
+          }
+          .segundo{
+            display: flex;
+            flex-direction: column;
+            margin: 10%;
+            align-items: center;
+          }
+        }*/
+
+        .job__date {
+          font-weight: normal;
+          font-size: 10px;
+          position: relative;
+          left: -15px;
+        }
+        .job__title {
+          font-weight: normal;
+          margin: 5px 0px;
+          cursor: pointer;
+        }
+
+        .job__description {
+          padding: 10px;
+          font-size: 70%;
+
+          p:first-child {
+            color: $color-darkgrey;
+            font-weight: bolder;
+          }
+        }
+
+        .job__submmit {
+          display: flex;
+          padding: 10px;
+          justify-content: center;
+          border-top: 1px solid rgb(170, 169, 169);
+          a {
+            color: $color-darkgrey;
+            font-size: 80%;
+          }
+          img {
+            max-width: 10px;
+          }
+        }
+      }
+    }
+
+    .volks__button{
+      display: none;
+    }
+
+    .article {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5px;
+      justify-content: space-evenly;
+
+      .article__image {
+        margin: 20px;
+        img {
+          max-height: 120px;
+        }
+      }
+
+      .article__description {
+        p {
+          max-width: 590px;
+          text-align: justify;
+          margin: 10px 0;
+          max-width: 400px;
+        }
+      }
+    }
+  }
+
+  //FOOTER
+  footer {
+    .footer {
+      display: flex;
+      min-width: 100%;
+      margin-top: 20px;
+    }
+    .footer__logo {
+      display: flex;
+      background-color: $color-brightred;
+      box-shadow: 1px 1px 3px #3e3d3d;
+      min-width: 40%;
+      justify-content: flex-end;
+      padding: 10px;
+      .logo__volks{
+        display: none;
+      }
+    }
+    .footer__menu {
+      background-color: $color-darkgrey;
+      box-shadow: 1px 1px 3px #3e3d3d;
+      min-width: 60%;
+      padding: 10px;
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: space-around;
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0px;
+        a {
+          color: $color-white;
+        }
+        .menu__links {
+          padding: 0px;
+          margin: 5px;
+        }
+      }
+    }
+    .copright {
+      display: flex;
+      margin: 5px;
+      padding: 5px;
+      color: $color-darkgrey;
+      justify-content: center;
+      font-size: 15px;
+    }
+  }
+
+
+@media only screen and (max-width:1382px) {
+    .job{
+        min-width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1022px) {
+    .job{
+        min-width: 45%;
+    }
+}
+
+@media only screen and (max-width: 695px) {
+    .job{
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+ 
+    .header__links{        
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .banner__block{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 10px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+    }
+
+    h1{
+        width: 100%;
+        font-size: 42px !important;
+    }
+    .search{
+        flex-direction: column !important;
+    }
+
+    .footer__menu{        
+      display: flex;
+      flex-flow: wrap column;
+    }
+    .menu{
+        font-size: 15px;
+    }
+}
