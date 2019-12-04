@@ -12,3 +12,8 @@ function trocaClasse() {
         document.getElementsByClassName("logo__image").addEventListener('click', changeClass);
     }
 }
+
+function submit() {
+    document.getElementById('function').value='';
+    document.getElementById('city').value='';
+}
